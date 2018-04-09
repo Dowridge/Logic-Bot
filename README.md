@@ -1,1 +1,1 @@
-# Time
+One of the problems with online gaming is knowing when your friends who live in different countries will be availible to play. For my discord bot, I created a command for a user to get all of the time zones in the specified region via the toString() method.
