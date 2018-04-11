@@ -6,6 +6,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.TimeZone;
 import java.util.Optional;
+
 public class Commands {
 
  public static int dice() {
@@ -21,12 +22,7 @@ public class Commands {
   int min = 1;
   int max = 2;
   int randomNum = ThreadLocalRandom.current().nextInt(min, max + 1);
-
-  if (randomNum == 1)
-   return ("Heads");
-
-  else
-   return ("Tails");
+  randomNum == 1 ? return("Heads") : return ("Tails"); //https://github.com/Chudleyj/Binance-Trading-Bot
  }
 
 
@@ -65,8 +61,9 @@ public class Commands {
    String v = h.replace("]", "");
    String z = v.replace(",", "");
    return z;
-  } catch (Exception a) {
-
+  }
+  catch (Exception a) {
+      System.out.println("Error: " + a); //https://github.com/Chudleyj/
   }
   return null;
  }
