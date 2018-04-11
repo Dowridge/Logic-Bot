@@ -5,7 +5,6 @@ import java.util.Date;
 import java.util.TimeZone;
 
 public class time {
-
 //Example Template
 /*
  public static String timezone() {
@@ -17,20 +16,17 @@ public class time {
 
  }
  */
-
+ public static String dateFormat = "MMMM dd,yyyy";
+ public static String timeFormat = "hh:mm:ss a \nzzzz";
  public static String UsEast() {
   time obtainDate = new time();
   TimeZone timeZone = TimeZone.getTimeZone("US/Eastern");
-  String dateFormat = "MMMM dd,yyyy";
-  String timeFormat = "hh:mm:ss a \nzzzz";
   return String.format("\n\nTodays Date: %s\nCurrent Time: %s", obtainDate.getTodayDate(dateFormat, timeZone), obtainDate.getCurrentTime(timeFormat, timeZone));
  }
 
  public String EU() {
   time obtainDate = new time();
   TimeZone timeZone = TimeZone.getTimeZone("Europe/London");
-  String dateFormat = "MMMM dd,yyyy";
-  String timeFormat = "hh:mm:ss a \nzzzz";
   return String.format("\n\nTodays Date: %s\nCurrent Time: %s", obtainDate.getTodayDate(dateFormat, timeZone), obtainDate.getCurrentTime(timeFormat, timeZone));
 
  }
@@ -38,24 +34,18 @@ public class time {
  public String AU() {
   time obtainDate = new time();
   TimeZone timeZone = TimeZone.getTimeZone("Australia/Sydney");
-  String dateFormat = "MMMM dd,yyyy";
-  String timeFormat = "hh:mm:ss a \nzzzz";
   return String.format("\n\nTodays Date: %s\nCurrent Time: %s", obtainDate.getTodayDate(dateFormat, timeZone), obtainDate.getCurrentTime(timeFormat, timeZone));
  }
 
  public String UsWest() {
   time obtainDate = new time();
   TimeZone timeZone = TimeZone.getTimeZone("America/Los_Angeles");
-  String dateFormat = "MMMM dd,yyyy";
-  String timeFormat = "hh:mm:ss a \nzzzz";
   return String.format("\n\nTodays Date: %s\nCurrent Time: %s", obtainDate.getTodayDate(dateFormat, timeZone), obtainDate.getCurrentTime(timeFormat, timeZone));
  }
  
  public String Haw() {
   time obtainDate = new time();
   TimeZone timeZone = TimeZone.getTimeZone("US/Hawaii");
-  String dateFormat = "MMMM dd,yyyy";
-  String timeFormat = "hh:mm:ss a \nzzzz";
   return String.format("\n\nTodays Date: %s\nCurrent Time: %s", obtainDate.getTodayDate(dateFormat, timeZone), obtainDate.getCurrentTime(timeFormat, timeZone));
  }
 
