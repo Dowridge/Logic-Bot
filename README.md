@@ -1,11 +1,11 @@
-Logical is a multifunction Discord bot intended to be able to minor tasks.
+# Logical is a multifunction Discord bot intended to be able to minor tasks.
 
-#Main features (more coming soon)
-Cringy ransom memes
-Dice Toss
-Coin Flip
-Runescape Grand Exchange Price Lookup
-Timezone Times
+## Main features (more coming soon)
+### Cringy ransom memes
+### Dice Toss
+### Coin Flip
+### Runescape Grand Exchange Price Lookup
+### Timezone Times
 
 Written in Java using the JDA library.
 
