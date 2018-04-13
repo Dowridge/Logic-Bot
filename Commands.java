@@ -22,7 +22,8 @@ public class Commands {
   int min = 1;
   int max = 2;
   int randomNum = ThreadLocalRandom.current().nextInt(min, max + 1);
-  randomNum == 1 ? return("Heads") : return ("Tails"); //https://github.com/Chudleyj/Binance-Trading-Bot
+  String return_value = (randomNum == 1) ? ("Heads") : ("Tails");
+  return return_value;
  }
 
 
